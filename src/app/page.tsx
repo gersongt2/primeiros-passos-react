@@ -2,6 +2,7 @@ import { Circle, Square } from "@/components/Geo";
 import { GeoForm } from "@/components/GeoForm";
 import { Card} from "@/components/Card";
 import { pessoas } from "@/data/peopleList";
+import { Rating } from "@/components/EmojiRating";
  
 
 
@@ -11,10 +12,12 @@ const Page = () =>{
   const filtro = pessoas.filter(person => person.profissao === "Gerente")
 
 
-
+  
 //variveis e condiçoes do primeiro exercicio
 
   const h =  new Date().getHours();
+
+
 
   return(
 
@@ -48,8 +51,12 @@ const Page = () =>{
 
 
 
-        
-        
+
+
+
+      {/* Exercicio 1 */}
+
+
 
           <div className=" grid grid-cols-1  bg-gradient-to-r from-blue-500 to-blue-950 w-screen h-screen ">
 
@@ -72,6 +79,12 @@ const Page = () =>{
 
 
 
+      {/* Exercicio 2 */}
+
+        <Rating nota={Math.floor(Math.random()*5) + 1
+}/>
+          
+  
 
     </div>
   
