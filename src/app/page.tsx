@@ -3,6 +3,7 @@ import { GeoForm } from "@/components/GeoForm";
 import { Card} from "@/components/Card";
 import { pessoas } from "@/data/peopleList";
 import { Rating } from "@/components/EmojiRating";
+import { Working } from "@/components/workingCard";
  
 
 
@@ -79,12 +80,14 @@ const Page = () =>{
 
 
 
-      {/* Exercicio 2 */}
+      {/* Exercicio 2 Nta dos alunos*/}
 
-        <Rating nota={Math.floor(Math.random()*5) + 1
-}/>
+        <Rating nota={Math.floor(Math.random()*5) + 1}/>
           
-  
+        
+      {/* Exercicio 3 Lista de funcionarios e produtividades  */}
+
+      <Working/>
 
     </div>
   
